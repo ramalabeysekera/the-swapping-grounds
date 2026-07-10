@@ -26,10 +26,10 @@ def merge_sort(nums: list[int]) -> list[int]:
     return merge(merge_sort(nums[:first_end]), merge_sort(nums[first_end:]))
 
 
-start = time.time()
+start = time.perf_counter()
 
 merge_sort(nums.copy())
 
-end = time.time()
+end = time.perf_counter()
 
 print(f"Took {end - start:.6f} seconds")

@@ -11,10 +11,10 @@ def insertion_sort(nums: list[int]) -> list[int]:
     return nums
 
 
-start = time.time()
+start = time.perf_counter()
 
 insertion_sort(nums.copy())
 
-end = time.time()
+end = time.perf_counter()
 
 print(f"Took {end - start:.6f} seconds")
